@@ -1,0 +1,24 @@
+{
+  "name": "House",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "chores": {
+      "type": "hasMany",
+      "model": "Chore",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

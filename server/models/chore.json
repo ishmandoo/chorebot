@@ -1,0 +1,27 @@
+{
+  "name": "Chore",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "schedule": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "people": {
+      "type": "hasMany",
+      "model": "Person",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
